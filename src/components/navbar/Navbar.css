@@ -1,0 +1,21 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  /* width: 100%; */
+  height: 100px;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.navbar-buttons {
+  a {
+    /* font-family: "Kanit", sans-serif; */
+    width: 100%;
+    text-decoration: none;
+    color: var(--gold);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
