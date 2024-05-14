@@ -1,0 +1,26 @@
+.hero-container {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero-text-container {
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+}
+
+.hero-text-title {
+  font-family: "EB Garamond", serif;
+  font-size: 80px;
+}
+
+.hero-text-subtitle {
+  font-family: "kanit", serif;
+  font-size: 31px;
+}
+
+.hero-button-container {
+  width: 300px;
+  margin-top: 30px;
+}
