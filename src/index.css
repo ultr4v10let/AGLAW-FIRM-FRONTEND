@@ -1,5 +1,25 @@
 :root {
   --gold: #e2cba1;
+  --gold-linear-gradient: linear-gradient(
+    90deg,
+    #7b612c 0%,
+    #937440 3%,
+    #a88351 7%,
+    #af8957 9%,
+    #c4a061 20%,
+    #d4b168 30%,
+    #e1c073 35%,
+    #f7d886 45%,
+    #ffe18d 50%,
+    #fadb88 55%,
+    #eaca7b 62%,
+    #d4b168 69%,
+    #af8957 92%,
+    #ab8654 94%,
+    #a07e4b 97%,
+    #8e6f3b 99%,
+    #7b612c 100%
+  );
 }
 
 * {

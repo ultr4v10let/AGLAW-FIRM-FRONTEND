@@ -1,0 +1,12 @@
+.service-card-container {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  background: var(--gold-linear-gradient);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+}
+.service-card-title {
+  margin: auto;
+}

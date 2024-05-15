@@ -7,17 +7,6 @@ function Navbar() {
   const [inputValue, setInputValue] = useState("");
   return (
     <nav className="navbar-container">
-      <div className="navbar-logo-container">
-        <img className="navbar-logo" src={logo} alt="" width="180" />
-      </div>
-      <div className="navbar-buttons">
-        <a href="#">تواصل معنا</a>
-        <a href="#">الميديا</a>
-        <a href="#">الاخبار</a>
-        <a href="#">الخدمات القانونية</a>
-        <a href="#">من نحن</a>
-        <a href="#">الرئيسية</a>
-      </div>
       <SearchInput
         inputValue={inputValue}
         setInputValue={setInputValue}
@@ -25,6 +14,17 @@ function Navbar() {
           console.log("SEARCH");
         }}
       />
+      <div className="navbar-buttons">
+        <a href="#">الرئيسية</a>
+        <a href="#">من نحن </a>
+        <a href="#">الخدمات القانونية</a>
+        <a href="#">الاخبار</a>
+        <a href="#">الميديا</a>
+        <a href="#">تواصل معنا</a>
+      </div>
+      <div className="navbar-logo-container">
+        <img className="navbar-logo" src={logo} alt="" width="180" />
+      </div>
     </nav>
   );
 }
