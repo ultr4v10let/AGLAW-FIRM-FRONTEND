@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
+import Card from "../components/reusable/Card/Card";
+import Footer from "../components/footer/Footer";
 import ItemsCarousel from "../components/itemsCarousel/ItemsCarousel";
 
 function Home() {
@@ -18,6 +20,13 @@ function Home() {
     <div>
       <Navbar />
       <Hero />
+      <br />
+      <br />
+      <br />
+      <Card></Card>
+      <br />
+      <br />
+      <Footer />
       {/* <ItemsCarousel items={items}/> */}
       {/* <h1>HomePage</h1> */}
     </div>

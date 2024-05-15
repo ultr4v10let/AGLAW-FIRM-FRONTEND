@@ -1,0 +1,17 @@
+.footer-container {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.upper-footer {
+  background: var(--gold-linear-gradient);
+  width: 80%;
+  margin-bottom: 25px;
+  margin-left: 100px;
+}
+.lower-footer {
+  background: var(--gold-linear-gradient);
+  width: 100%;
+}
