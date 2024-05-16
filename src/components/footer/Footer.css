@@ -7,11 +7,94 @@
 }
 .upper-footer {
   background: var(--gold-linear-gradient);
+  border-radius: 6px;
   width: 80%;
   margin-bottom: 25px;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+.footer-content {
+  color: #ffffff;
+  width: 40%;
+}
+
+.footer-social-media {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.footer-social-media .button {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: var(--gold);
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.footer-social-media .button:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
 .lower-footer {
+  display: flex;
+  flex-direction: column;
   background: var(--gold-linear-gradient);
+  align-items: center;
   width: 100%;
+}
+
+.lower-footer-content {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.lower-footer-textinput-button-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button-container {
+  width: 25%;
+}
+
+.subscribe-button {
+  background: var(--gold-linear-gradient);
+  border-radius: 25px;
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Tajawal";
+  border: none;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.lower-footer-content2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
 }

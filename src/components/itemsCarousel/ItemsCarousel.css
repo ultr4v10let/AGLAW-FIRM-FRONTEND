@@ -1,12 +1,12 @@
-.carousel-item-padding-5-px{
-    margin: 0px 5px;
-    height: 100%;
+.carousel-item-padding-5-px {
+  margin: 0px 5px;
+  height: 100%;
 }
 
-.carousel-container{
-    background: black;
+.carousel-container {
+  background: transparent;
 
-    .react-multiple-carousel__arrow::before {
-        color: #E2CBA1;
-    }
+  .react-multiple-carousel__arrow::before {
+    color: #e2cba1;
+  }
 }
