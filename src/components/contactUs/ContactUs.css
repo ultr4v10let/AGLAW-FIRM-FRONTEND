@@ -1,0 +1,69 @@
+.conatct-us-container {
+  background: black;
+  position: relative;
+}
+
+.contact-us-footer-container {
+  padding-top: 150px;
+}
+
+.contact-us-form-container {
+  width: 500px;
+  height: 600px;
+  background: #eaeaea;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  border-radius: 30px;
+}
+.contact-us-input-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+  label {
+    color: #848484;
+    float: right;
+  }
+}
+
+.contact-us-text-input {
+  border: none;
+  border-bottom: 1px solid #a5a5a5;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  text-align: right;
+}
+
+.contact-us-text-input:focus {
+  outline: none;
+}
+
+.contact-us-text-area {
+  height: 100px;
+  width: calc(100% - 20px);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #a5a5a5;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: right;
+}
+
+.contact-us-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  color: #b28c57;
+  font-weight: 500;
+}
+
+.contact-us-submit-container {
+  height: 20px;
+  width: 200px;
+  margin: auto;
+  padding-top: 10px;
+}

@@ -20,7 +20,7 @@ function Navbar() {
         <a href="#">الخدمات القانونية</a>
         <a href="#">الاخبار</a>
         <a href="#">الميديا</a>
-        <a href="#">تواصل معنا</a>
+        <a href="#contactUs">تواصل معنا</a>
       </div>
       <div className="navbar-logo-container">
         <img className="navbar-logo" src={logo} alt="" width="180" />
