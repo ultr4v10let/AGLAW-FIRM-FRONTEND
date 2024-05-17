@@ -63,7 +63,7 @@ function ContactUs() {
           <ButtonComponent
             height="40px"
             fontSize="20px"
-            onClick={formSubmitHandler}
+            type="submit"
             value="send"
           >
             إرسال
