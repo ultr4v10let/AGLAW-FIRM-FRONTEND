@@ -1,0 +1,19 @@
+.container-1 {
+  margin-left: 0;
+}
+
+/* Carousel container */
+.corousel-container {
+  text-align: center;
+}
+
+/* Images inside carousel */
+.image-1 {
+  height: 250px;
+}
+.Text-1 {
+  color: #e2cba1;
+}
+p {
+  color: #e2cba1;
+}

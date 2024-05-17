@@ -4,6 +4,7 @@ import Hero from "../components/hero/Hero";
 import Card from "../components/reusable/Card/Card";
 import Footer from "../components/footer/Footer";
 import ItemsCarousel from "../components/itemsCarousel/ItemsCarousel";
+import LegalServices from "../components/legalServices/LegalServices";
 
 function Home() {
   const items = [
@@ -27,6 +28,7 @@ function Home() {
       <br />
       <br />
       <Footer />
+      <LegalServices />
       {/* <ItemsCarousel items={items}/> */}
       {/* <h1>HomePage</h1> */}
     </div>
