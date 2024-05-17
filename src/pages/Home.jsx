@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
-import Card from "../components/reusable/Card/Card";
 import Footer from "../components/footer/Footer";
 import ItemsCarousel from "../components/itemsCarousel/ItemsCarousel";
 import AboutUs from "../components/aboutUs/AboutUs";
+
 import { clientsAPI } from "../services/clients";
 import { legalServicesAPI } from "../services/legalServices";
 import { teamMembersAPI } from "../services/teamMembers";
 import { newsAPI } from "../services/news";
 
-
+import ContactUs from "../components/contactUs/ContactUs";
 
 function Home() {
   const [clients, setClients] = useState()
@@ -60,8 +60,9 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero buttonText="Our Services" withNav={true} />
       <AboutUs />
+      <ContactUs />
       {/* <ItemsCarousel items={items}/> */}
       {/* <h1>HomePage</h1> */}
     </div>

@@ -9,6 +9,13 @@ function AboutUs() {
   return (
     <RadialGradientContainer side="left">
       <div className="about-us-container">
+        <div
+          id="aboutUs"
+          style={{
+            position: "absolute",
+            top: "-100px",
+          }}
+        ></div>
         <div className="about-us-title">AG Law Firm</div>
         <div className="about-us-description">
           {" "}
