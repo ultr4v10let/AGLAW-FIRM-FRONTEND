@@ -44,7 +44,7 @@ function Hero({
         </div>
         {buttonText && (
           <div className="hero-button-container">
-            <ButtonComponent type="transparent" onClick={onButtonClick}>
+            <ButtonComponent style="transparent" onClick={onButtonClick}>
               Our Service
             </ButtonComponent>
           </div>
