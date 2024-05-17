@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
-import Card from "../components/reusable/Card/Card";
 import Footer from "../components/footer/Footer";
 import ItemsCarousel from "../components/itemsCarousel/ItemsCarousel";
 import AboutUs from "../components/aboutUs/AboutUs";
+import ContactUs from "../components/contactUs/ContactUs";
 
 function Home() {
   const items = [
@@ -20,8 +20,9 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero buttonText="Our Services" withNav={true} />
       <AboutUs />
+      <ContactUs />
       {/* <ItemsCarousel items={items}/> */}
       {/* <h1>HomePage</h1> */}
     </div>

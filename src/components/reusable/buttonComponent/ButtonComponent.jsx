@@ -4,16 +4,17 @@ import "./ButtonComponent.css";
 function ButtonComponent({
   children,
   onClick,
-  size = "default",
   type = "default",
+  height,
+  fontSize,
 }) {
   return (
     <button
       className="button-component"
       style={{
         width: "100%",
-        height: size === "compact" ? "55px" : "65px",
-        fontSize: size === "compact" ? "24px" : "28px",
+        height: height ? height : "65px",
+        fontSize: fontSize ? fontSize : "28px",
         cursor: "pointer",
         border: "none",
         letterSpacing: "2px",
