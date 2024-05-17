@@ -11,8 +11,19 @@ function ContactUs() {
     console.log("test");
   };
   return (
-    <div className="conatct-us-container" id="contactUs">
-      <Hero backgroundImage={backgroundImage} textColor="white" />
+    <div className="conatct-us-container">
+      <div
+        id="contactUs"
+        style={{
+          position: "absolute",
+          top: "-100px",
+        }}
+      ></div>
+      <Hero
+        backgroundImage={backgroundImage}
+        textColor="white"
+        withNav={true}
+      />
       <form onSubmit={formSubmitHandler} className="contact-us-form-container">
         <div className="contact-us-title">تواصل معنا</div>
         <input
