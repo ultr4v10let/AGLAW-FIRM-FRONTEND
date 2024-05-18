@@ -5,11 +5,13 @@ import LegalServices from "../components/legalServices/LegalServices";
 import AboutUs from "../components/aboutUs/AboutUs";
 import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 import ContactUs from "../components/contactUs/ContactUs";
+import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
+
 import { clientsAPI } from "../services/clients";
 import { legalServicesAPI } from "../services/legalServices";
 import { teamMembersAPI } from "../services/teamMembers";
 import { newsAPI } from "../services/news";
-import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
+import { galleryAPI } from "../services/gallery";
 
 function Home() {
   const [clients, setClients] = useState();
@@ -33,6 +35,11 @@ function Home() {
     newsAPI().then((res) => {
       setNews(res.data);
     });
+
+    galleryAPI().then((res) => {
+      setNews(res.data);
+    });
+
   }, []);
 
   return (
