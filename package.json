@@ -24,7 +24,8 @@
     "build-ci": "npm run lint && react-scripts build",
     "lint": "eslint .",
     "lint:ci": "eslint . || true",
-    "build:ci": "npm run lint:ci && your-build-command""test": "react-scripts test",
+    "build:ci": "npm run lint:ci && react-scripts build-ci",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
