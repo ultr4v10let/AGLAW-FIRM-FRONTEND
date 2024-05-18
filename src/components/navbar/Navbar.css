@@ -7,6 +7,9 @@
   align-items: center;
   padding-right: 5%;
   padding-left: 5%;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
 }
 
 .navbar-buttons {
@@ -17,5 +20,6 @@
     color: var(--gold);
     margin-right: 20px;
     margin-left: 20px;
+    font-size: 20px;
   }
 }

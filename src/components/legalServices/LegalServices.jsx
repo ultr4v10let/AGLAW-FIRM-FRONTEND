@@ -16,6 +16,21 @@ export default function LegalServices() {
       title: "القضايا الجنائية",
       description: "lorem impsum tekh bekh",
     },
+    {
+      image: Image,
+      title: "القضايا الجنائية",
+      description: "lorem impsum tekh bekh",
+    },
+    {
+      image: Image,
+      title: "القضايا الجنائية",
+      description: "lorem impsum tekh bekh",
+    },
+    {
+      image: Image,
+      title: "القضايا الجنائية",
+      description: "lorem impsum tekh bekh",
+    },
   ];
 
   const items = carouselConfig.map((configItem) => (
