@@ -1,0 +1,43 @@
+.image-slider-container {
+  padding-bottom: 200px;
+}
+
+.data-section {
+  align-items: center;
+
+  .data-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 89.95px;
+    text-align: center;
+    color: var(--gold);
+  }
+
+  .data-title-description {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--gold);
+    min-height: 200px;
+  }
+
+  .data-title-sections {
+    font-size: 24px;
+    text-align: center;
+    color: var(--gold);
+  }
+  /* 
+    .data-description{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 600px;
+        text-align: center;
+        color: var(--gold);
+    } */
+}
+
+.img-class {
+  height: 700px;
+  width: 600px;
+  object-fit: cover;
+}

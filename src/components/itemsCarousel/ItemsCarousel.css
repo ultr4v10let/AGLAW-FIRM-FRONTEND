@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+.items-container{
+  text-align: center;
+}
+
 .carousel-container {
   background: transparent;
 

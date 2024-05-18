@@ -3,6 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import LegalServices from "../components/legalServices/LegalServices";
 import AboutUs from "../components/aboutUs/AboutUs";
+import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 import ContactUs from "../components/contactUs/ContactUs";
 import { clientsAPI } from "../services/clients";
 import { legalServicesAPI } from "../services/legalServices";
@@ -41,6 +42,7 @@ function Home() {
       <RadialGradientContainer side="left">
         <AboutUs />
         <LegalServices />
+        <ImageSlider />
       </RadialGradientContainer>
       <ContactUs />
     </div>

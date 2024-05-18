@@ -52,7 +52,7 @@ export default function LegalServices() {
         }}
       ></div>
       <div className="legal-services-title">الخدمات القانونية</div>
-      <ItemsCarousel items={items} />
+      <ItemsCarousel items={items} numberOfDeskTopItems={3} />
     </div>
   );
 }
