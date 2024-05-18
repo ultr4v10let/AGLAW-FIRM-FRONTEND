@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../static/images/navbar-logo.svg";
+import logo from "../../static/images/navbarlogo.png";
 import SearchInput from "../reusable/searchInput/SearchInput";
 
 function Navbar() {
