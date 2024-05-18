@@ -1,5 +1,6 @@
 .image-slider-container {
   padding-bottom: 200px;
+  position: relative;
 }
 
 .data-section {

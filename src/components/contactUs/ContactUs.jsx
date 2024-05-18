@@ -17,9 +17,13 @@ function ContactUs() {
       .then(
         () => {
           console.log("SUCCESS!");
+          alert("Email sent successfully!");
         },
         (error) => {
           console.log("FAILED...", error.text);
+          alert(
+            "Error: something went wrong while trying to send your email, please try again later."
+          );
         }
       );
   };
