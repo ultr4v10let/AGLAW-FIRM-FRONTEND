@@ -5,15 +5,12 @@ import LegalServices from "../components/legalServices/LegalServices";
 import AboutUs from "../components/aboutUs/AboutUs";
 import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 import ContactUs from "../components/contactUs/ContactUs";
-import { clientsAPI } from "../services/clients";
-import { legalServicesAPI } from "../services/legalServices";
-import { teamMembersAPI } from "../services/teamMembers";
-import { newsAPI } from "../services/news";
+import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI} from "../services/Services"
 import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
 
 function Home() {
   const [clients, setClients] = useState();
-  const [teamMembers, setTeamMembers] = useState();
+  const [teamMembers, setTeamMembers] = useState([]);
   const [legalServices, setLegalServices] = useState();
   const [news, setNews] = useState();
 
@@ -42,7 +39,7 @@ function Home() {
       <RadialGradientContainer side="left">
         <AboutUs />
         <LegalServices />
-        <ImageSlider />
+        {teamMembers.length > 0 && <ImageSlider  data={teamMembers}/>}
       </RadialGradientContainer>
       <ContactUs />
     </div>
