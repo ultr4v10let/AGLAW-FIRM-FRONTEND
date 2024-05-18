@@ -8,6 +8,7 @@ import { clientsAPI } from "../services/clients";
 import { legalServicesAPI } from "../services/legalServices";
 import { teamMembersAPI } from "../services/teamMembers";
 import { newsAPI } from "../services/news";
+import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
 
 function Home() {
   const [clients, setClients] = useState();
@@ -37,8 +38,10 @@ function Home() {
     <div>
       <Navbar />
       <Hero buttonText="Our Services" withNav={true} />
-      <AboutUs />
-      <LegalServices />
+      <RadialGradientContainer side="left">
+        <AboutUs />
+        <LegalServices />
+      </RadialGradientContainer>
       <ContactUs />
     </div>
   );

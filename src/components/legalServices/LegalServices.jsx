@@ -1,35 +1,36 @@
 import React from "react";
 import "./LegalServices.css";
 import ItemsCarousel from "../itemsCarousel/ItemsCarousel";
-import Image from "../../static/images/Rectangle.jpg";
+import criminalIcon from "../../static/icons/criminal.png";
+import commercialIcon from "../../static/icons/commercial.png";
+import familyIcon from "../../static/icons/family.png";
+import globeIcon from "../../static/icons/globe.png";
 import LegalServicesCard from "../reusable/legalServicesCard/LegalServicesCard";
-import RadialGradientContainer from "../reusable/radialGradientContainer/RadialGradientContainer";
 export default function LegalServices() {
   const carouselConfig = [
     {
-      image: Image,
+      image: criminalIcon,
       title: "القضايا الجنائية",
-      description: "lorem impsum tekh bekh",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
     },
     {
-      image: Image,
-      title: "القضايا الجنائية",
-      description: "lorem impsum tekh bekh",
+      image: commercialIcon,
+      title: "قضايا تجارية وتأسيس شركات",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
     },
     {
-      image: Image,
-      title: "القضايا الجنائية",
-      description: "lorem impsum tekh bekh",
+      image: globeIcon,
+      title: "قضايا التحكيم التجاري و الدولي",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
     },
     {
-      image: Image,
-      title: "القضايا الجنائية",
-      description: "lorem impsum tekh bekh",
-    },
-    {
-      image: Image,
-      title: "القضايا الجنائية",
-      description: "lorem impsum tekh bekh",
+      image: familyIcon,
+      title: "دعاوي محاكم الاسرة والمحاكم الإقتصادية",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
     },
   ];
 
@@ -42,10 +43,16 @@ export default function LegalServices() {
   ));
 
   return (
-    <RadialGradientContainer side="right">
-      <div className="corousel-container">
-        <ItemsCarousel items={items} />
-      </div>
-    </RadialGradientContainer>
+    <div className="corousel-container">
+      <div
+        id="legalServices"
+        style={{
+          position: "absolute",
+          top: "-100px",
+        }}
+      ></div>
+      <div className="legal-services-title">الخدمات القانونية</div>
+      <ItemsCarousel items={items} />
+    </div>
   );
 }

@@ -17,7 +17,7 @@ function Navbar() {
       <div className="navbar-buttons">
         <a href="#">الرئيسية</a>
         <a href="#aboutUs">من نحن </a>
-        <a href="#">الخدمات القانونية</a>
+        <a href="#legalServices">الخدمات القانونية</a>
         <a href="#">الاخبار</a>
         <a href="#">الميديا</a>
         <a href="#contactUs">تواصل معنا</a>
