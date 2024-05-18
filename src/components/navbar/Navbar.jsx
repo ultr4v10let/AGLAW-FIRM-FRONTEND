@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../static/images/navbar-logo.svg";
+import logo from "../../static/images/navbarlogo.png";
 import SearchInput from "../reusable/searchInput/SearchInput";
 
 function Navbar() {
@@ -17,7 +17,7 @@ function Navbar() {
       <div className="navbar-buttons">
         <a href="#">الرئيسية</a>
         <a href="#aboutUs">من نحن </a>
-        <a href="#">الخدمات القانونية</a>
+        <a href="#legalServices">الخدمات القانونية</a>
         <a href="#">الاخبار</a>
         <a href="#">الميديا</a>
         <a href="#contactUs">تواصل معنا</a>
