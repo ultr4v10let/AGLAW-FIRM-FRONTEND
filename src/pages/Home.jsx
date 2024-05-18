@@ -5,6 +5,7 @@ import Card from "../components/reusable/Card/Card";
 import Footer from "../components/footer/Footer";
 import ItemsCarousel from "../components/itemsCarousel/ItemsCarousel";
 import AboutUs from "../components/aboutUs/AboutUs";
+import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 
 function Home() {
   const items = [
@@ -22,6 +23,7 @@ function Home() {
       <Navbar />
       <Hero />
       <AboutUs />
+      <ImageSlider/>
       {/* <ItemsCarousel items={items}/> */}
       {/* <h1>HomePage</h1> */}
     </div>
