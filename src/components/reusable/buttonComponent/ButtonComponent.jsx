@@ -4,24 +4,27 @@ import "./ButtonComponent.css";
 function ButtonComponent({
   children,
   onClick,
-  size = "default",
-  type = "default",
+  style = "default",
+  height,
+  fontSize,
+  type = "text",
 }) {
   return (
     <button
       className="button-component"
+      type={type}
       style={{
         width: "100%",
-        height: size === "compact" ? "55px" : "65px",
-        fontSize: size === "compact" ? "24px" : "28px",
+        height: height ? height : "65px",
+        fontSize: fontSize ? fontSize : "28px",
         cursor: "pointer",
         border: "none",
         letterSpacing: "2px",
         background:
-          type === "transparent"
+          style === "transparent"
             ? "rgba(0, 0, 0, 0.7)"
             : "var(--gold-linear-gradient)",
-        color: type === "transparent" ? "white" : "black",
+        color: style === "transparent" ? "white" : "black",
       }}
       onClick={onClick}
     >
