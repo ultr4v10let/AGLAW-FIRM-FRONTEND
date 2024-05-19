@@ -5,8 +5,7 @@ import LegalServices from "../components/legalServices/LegalServices";
 import AboutUs from "../components/aboutUs/AboutUs";
 import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 import ContactUs from "../components/contactUs/ContactUs";
-import { galleryAPI } from "../services/gallery";
-import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI} from "../services/Services"
+import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI, galleryAPI} from "../services/Services"
 import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
 
 function Home() {
