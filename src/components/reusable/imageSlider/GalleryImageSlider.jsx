@@ -3,7 +3,7 @@ import ItemsCarousel from "../../itemsCarousel/ItemsCarousel";
 import justiceScaleImage from "../../../static/images/woman-scale.png";
 import ahmedbasha from "../../../static/images/AhmedBasha.png";
 import RadialGradientContainer from "../radialGradientContainer/RadialGradientContainer";
-import "./ImageSlider.css";
+import "./GalleryImageSlider.css";
 
 const GalleryImageSlider = ({ data }) => {
 
@@ -31,7 +31,7 @@ const GalleryImageSlider = ({ data }) => {
         items={createImages()}
         onchange={(slide) => setCurrentSlide(slide)}
       ></ItemsCarousel>
-      <div className="data-section">
+      <div className="gallery-data-section">
         <div className="data-title-description">{data[currentSlide].description}</div>
       </div>
     </div>
