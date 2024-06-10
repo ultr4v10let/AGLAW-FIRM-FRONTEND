@@ -16,4 +16,8 @@ const newsAPI  = async () => {
     return await axios.get('http://18.185.53.142:8000/news/')
 }
 
-export {legalServicesAPI, clientsAPI, teamMembersAPI, newsAPI}
+const galleryAPI  = async () => {
+    return await axios.get('http://18.185.53.142:8000/gallery/')
+}
+
+export {legalServicesAPI, clientsAPI, teamMembersAPI, newsAPI, galleryAPI}

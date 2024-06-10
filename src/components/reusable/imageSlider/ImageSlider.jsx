@@ -6,40 +6,40 @@ import RadialGradientContainer from "../radialGradientContainer/RadialGradientCo
 import "./ImageSlider.css";
 
 const ImageSlider = ({ data }) => {
-//   const data = [
-//     {
-//       id: 1,
-//       name: "Ahmed Abd El-Gawad",
-//       title:
-//         "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-//       description: "www",
-//       image: ahmedbasha,
-//     },
-//     {
-//       id: 2,
-//       name: "Ahmed Abd El-Gawad",
-//       title:
-//         "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-//       description: "www",
-//       image: ahmedbasha,
-//     },
-//     {
-//       id: 3,
-//       name: "Ahmed Abd El-Gawad",
-//       title:
-//         "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-//       description: "www",
-//       image: ahmedbasha,
-//     },
-//     {
-//       id: 4,
-//       name: "Ahmed Abd El-Gawad",
-//       title:
-//         "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-//       description: "www",
-//       image: ahmedbasha,
-//     },
-//   ];
+  // const data = [
+  //   {
+  //     id: 1,
+  //     name: "Ahmed Abd El-Gawad",
+  //     title:
+  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
+  //     description: "www",
+  //     image: ahmedbasha,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Ahmed Abd El-Gawad",
+  //     title:
+  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
+  //     description: "www",
+  //     image: ahmedbasha,
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Ahmed Abd El-Gawad",
+  //     title:
+  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
+  //     description: "www",
+  //     image: ahmedbasha,
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Ahmed Abd El-Gawad",
+  //     title:
+  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
+  //     description: "www",
+  //     image: ahmedbasha,
+  //   },
+  // ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const createImages = () => {

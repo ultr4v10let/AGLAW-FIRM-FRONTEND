@@ -4,16 +4,18 @@ import Hero from "../components/hero/Hero";
 import LegalServices from "../components/legalServices/LegalServices";
 import AboutUs from "../components/aboutUs/AboutUs";
 import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
+import GalleryImageSlider from "../components/reusable/imageSlider/GalleryImageSlider";
 import ContactUs from "../components/contactUs/ContactUs";
-import { galleryAPI } from "../services/gallery";
-import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI} from "../services/Services"
+import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI, galleryAPI} from "../services/Services"
 import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
 
 function Home() {
-  const [clients, setClients] = useState();
+  const [clients, setClients] = useState([]);
   const [teamMembers, setTeamMembers] = useState([]);
-  const [legalServices, setLegalServices] = useState();
-  const [news, setNews] = useState();
+  const [legalServices, setLegalServices] = useState([]);
+  const [news, setNews] = useState([]);
+  const [gallery, setGallery] = useState([]);
+  
 
   useEffect(() => {
     clientsAPI().then((res) => {
@@ -33,7 +35,7 @@ function Home() {
     });
 
     galleryAPI().then((res) => {
-      setNews(res.data);
+      setGallery(res.data);
     });
 
   }, []);
@@ -44,8 +46,9 @@ function Home() {
       <Hero buttonText="Our Services" withNav={true} />
       <RadialGradientContainer side="left">
         <AboutUs />
-        <LegalServices />
+        {legalServices.length > 0 && <LegalServices data={legalServices}/> }
         {teamMembers.length > 0 && <ImageSlider  data={teamMembers}/>}
+        {gallery.length > 0 && <GalleryImageSlider  data={gallery}/>}
       </RadialGradientContainer>
       <ContactUs />
     </div>

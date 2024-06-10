@@ -6,33 +6,8 @@ import commercialIcon from "../../static/icons/commercial.png";
 import familyIcon from "../../static/icons/family.png";
 import globeIcon from "../../static/icons/globe.png";
 import LegalServicesCard from "../reusable/legalServicesCard/LegalServicesCard";
-export default function LegalServices() {
-  const carouselConfig = [
-    {
-      image: criminalIcon,
-      title: "القضايا الجنائية",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
-    },
-    {
-      image: commercialIcon,
-      title: "قضايا تجارية وتأسيس شركات",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
-    },
-    {
-      image: globeIcon,
-      title: "قضايا التحكيم التجاري و الدولي",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
-    },
-    {
-      image: familyIcon,
-      title: "دعاوي محاكم الاسرة والمحاكم الإقتصادية",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae error officia veniam eligendi odit sed fugit asperiores ipsa! Minus esse culpa adipisci recusandae fugiat, et laborum autem deserunt ea delectus!",
-    },
-  ];
+export default function LegalServices(data) {
+  const carouselConfig = data.data
 
   const items = carouselConfig.map((configItem) => (
     <LegalServicesCard
