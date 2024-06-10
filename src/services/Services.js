@@ -16,7 +16,7 @@ const newsAPI  = async () => {
     return await axios.get('http://18.185.53.142:8000/news/')
 }
 
-const galleryAPI  = async () => {
+const galleryAPI = async () => {
     return await axios.get('http://18.185.53.142:8000/gallery/')
 }
 
