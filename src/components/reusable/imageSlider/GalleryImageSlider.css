@@ -4,6 +4,7 @@
 }
 
 .gallery-data-section {
+  margin-top: 2%;
   align-items: center;
   padding-left: 15%;
   padding-right: 15%;
@@ -29,14 +30,6 @@
     text-align: center;
     color: var(--gold);
   }
-  /* 
-    .data-description{
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 600px;
-        text-align: center;
-        color: var(--gold);
-    } */
 }
 
 .img-class {

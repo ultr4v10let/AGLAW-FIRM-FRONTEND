@@ -1,0 +1,41 @@
+.container-1 {
+  margin-left: 0;
+}
+
+/* Carousel container */
+.clients-corousel-container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 300px;
+  position: relative;
+  align-items: center;
+}
+
+.clients-title {
+  color: var(--gold);
+  font-family: Cairo;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66.82px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+/* Images inside carousel */
+.image-1 {
+  height: 250px;
+  width: 270px;
+}
+.Text-1 {
+  color: #e2cba1;
+  font-size: 30px;
+  padding-top: 30px;
+  height: 130px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+p {
+  color: #e2cba1;
+  padding-left: 50px;
+  padding-right: 50px;
+}

@@ -37,6 +37,16 @@
     } */
 }
 
+.teammember-title {
+  color: var(--gold);
+  font-family: Cairo;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66.82px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
 .img-class {
   height: 700px;
   width: 600px;

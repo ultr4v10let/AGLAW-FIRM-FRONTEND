@@ -1,45 +1,9 @@
 import { useState } from "react";
 import ItemsCarousel from "../../itemsCarousel/ItemsCarousel";
-import justiceScaleImage from "../../../static/images/woman-scale.png";
-import ahmedbasha from "../../../static/images/AhmedBasha.png";
-import RadialGradientContainer from "../radialGradientContainer/RadialGradientContainer";
 import "./ImageSlider.css";
 
 const ImageSlider = ({ data }) => {
-  // const data = [
-  //   {
-  //     id: 1,
-  //     name: "Ahmed Abd El-Gawad",
-  //     title:
-  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-  //     description: "www",
-  //     image: ahmedbasha,
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Ahmed Abd El-Gawad",
-  //     title:
-  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-  //     description: "www",
-  //     image: ahmedbasha,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Ahmed Abd El-Gawad",
-  //     title:
-  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-  //     description: "www",
-  //     image: ahmedbasha,
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Ahmed Abd El-Gawad",
-  //     title:
-  //       "نائب رئيس حزب مستقبل وطن وأمين التنظيم,نائب رئيس مجلس إدارة قناة المحور,عضو مجلس الشيوخ",
-  //     description: "www",
-  //     image: ahmedbasha,
-  //   },
-  // ];
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const createImages = () => {
@@ -68,6 +32,7 @@ const ImageSlider = ({ data }) => {
           top: "-100px",
         }}
       ></div>
+      <div className="teammember-title">أعضاء الفريق</div>
       <ItemsCarousel
         items={createImages()}
         onchange={(slide) => setCurrentSlide(slide)}

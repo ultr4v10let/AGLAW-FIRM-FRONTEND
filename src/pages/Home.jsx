@@ -5,6 +5,7 @@ import LegalServices from "../components/legalServices/LegalServices";
 import AboutUs from "../components/aboutUs/AboutUs";
 import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 import GalleryImageSlider from "../components/reusable/imageSlider/GalleryImageSlider";
+import Clients from "../components/clients/Clients";
 import ContactUs from "../components/contactUs/ContactUs";
 import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI, galleryAPI} from "../services/Services"
 import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
@@ -49,6 +50,7 @@ function Home() {
         {legalServices.length > 0 && <LegalServices data={legalServices}/> }
         {teamMembers.length > 0 && <ImageSlider  data={teamMembers}/>}
         {gallery.length > 0 && <GalleryImageSlider  data={gallery}/>}
+        {clients.length > 0 && <Clients data={clients}/> }
       </RadialGradientContainer>
       <ContactUs />
     </div>
