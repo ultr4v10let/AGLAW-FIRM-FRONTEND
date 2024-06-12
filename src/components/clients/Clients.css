@@ -25,6 +25,7 @@
 .image-1 {
   height: 250px;
   width: 270px;
+  object-fit: contain;
 }
 .Text-1 {
   color: #e2cba1;
