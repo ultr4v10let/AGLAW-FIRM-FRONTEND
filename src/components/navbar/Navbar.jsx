@@ -83,7 +83,7 @@ function Navbar() {
           <a href="#contactUs">تواصل معنا</a>
         </div>
         <div className="navbar-logo-container">
-          <img className="navbar-logo" src={logo} alt="" width="180" />
+          <img className="navbar-logo-desktop" src={logo} alt="" />
         </div>
       </nav>
       <div className="navbar-logo-container-mobile-controls">

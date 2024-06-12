@@ -23,6 +23,10 @@
   }
 }
 
+.navbar-logo-desktop {
+  width: 180px;
+}
+
 .navbar-container-mobile {
   display: none;
 }
@@ -31,7 +35,25 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
+  .navbar-logo-desktop {
+    width: 140px;
+  }
+
+  .navbar-buttons {
+    a {
+      font-family: "Tajawal", sans-serif;
+      width: 100%;
+      text-decoration: none;
+      color: var(--gold);
+      margin-right: 15px;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
   .navbar-container {
     display: none;
   }
