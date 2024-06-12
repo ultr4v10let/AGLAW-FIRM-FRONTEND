@@ -7,7 +7,13 @@ import ImageSlider from "../components/reusable/imageSlider/ImageSlider";
 import GalleryImageSlider from "../components/reusable/imageSlider/GalleryImageSlider";
 import Clients from "../components/clients/Clients";
 import ContactUs from "../components/contactUs/ContactUs";
-import { clientsAPI, legalServicesAPI, teamMembersAPI, newsAPI, galleryAPI} from "../services/Services"
+import {
+  clientsAPI,
+  legalServicesAPI,
+  teamMembersAPI,
+  newsAPI,
+  galleryAPI,
+} from "../services/Services";
 import RadialGradientContainer from "../components/reusable/radialGradientContainer/RadialGradientContainer";
 
 function Home() {
@@ -16,7 +22,6 @@ function Home() {
   const [legalServices, setLegalServices] = useState([]);
   const [news, setNews] = useState([]);
   const [gallery, setGallery] = useState([]);
-  
 
   useEffect(() => {
     clientsAPI().then((res) => {
@@ -38,7 +43,6 @@ function Home() {
     galleryAPI().then((res) => {
       setGallery(res.data);
     });
-
   }, []);
 
   return (
@@ -47,10 +51,10 @@ function Home() {
       <Hero buttonText="Our Services" withNav={true} />
       <RadialGradientContainer side="left">
         <AboutUs />
-        {legalServices.length > 0 && <LegalServices data={legalServices}/> }
-        {teamMembers.length > 0 && <ImageSlider  data={teamMembers}/>}
-        {gallery.length > 0 && <GalleryImageSlider  data={gallery}/>}
-        {clients.length > 0 && <Clients data={clients}/> }
+        {legalServices.length > 0 && <LegalServices data={legalServices} />}
+        {teamMembers.length > 0 && <ImageSlider data={teamMembers} />}
+        {gallery.length > 0 && <GalleryImageSlider data={gallery} />}
+        {clients.length > 0 && <Clients data={clients} />}
       </RadialGradientContainer>
       <ContactUs />
     </div>

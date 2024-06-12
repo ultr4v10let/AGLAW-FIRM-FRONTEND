@@ -1,13 +1,9 @@
 import React from "react";
 import "./LegalServices.css";
 import ItemsCarousel from "../itemsCarousel/ItemsCarousel";
-import criminalIcon from "../../static/icons/criminal.png";
-import commercialIcon from "../../static/icons/commercial.png";
-import familyIcon from "../../static/icons/family.png";
-import globeIcon from "../../static/icons/globe.png";
 import LegalServicesCard from "../reusable/legalServicesCard/LegalServicesCard";
 export default function LegalServices(data) {
-  const carouselConfig = data.data
+  const carouselConfig = data.data;
 
   const items = carouselConfig.map((configItem) => (
     <LegalServicesCard

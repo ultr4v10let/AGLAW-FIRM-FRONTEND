@@ -1,18 +1,21 @@
 import { useState } from "react";
 import ItemsCarousel from "../../itemsCarousel/ItemsCarousel";
-import justiceScaleImage from "../../../static/images/woman-scale.png";
-import ahmedbasha from "../../../static/images/AhmedBasha.png";
-import RadialGradientContainer from "../radialGradientContainer/RadialGradientContainer";
 import "./GalleryImageSlider.css";
 
 const GalleryImageSlider = ({ data }) => {
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const createImages = () => {
     const images = [];
-    data.map((img) => {
-      images.push(<img key={img?.id} className="img-class" src={img.image} />);
+    data.forEach((img) => {
+      images.push(
+        <img
+          key={img?.id}
+          className="img-class"
+          src={img.image}
+          alt="carousel"
+        />
+      );
     });
     return images;
   };
@@ -32,7 +35,9 @@ const GalleryImageSlider = ({ data }) => {
         onchange={(slide) => setCurrentSlide(slide)}
       ></ItemsCarousel>
       <div className="gallery-data-section">
-        <div className="data-title-description">{data[currentSlide].description}</div>
+        <div className="data-title-description">
+          {data[currentSlide].description}
+        </div>
       </div>
     </div>
   );

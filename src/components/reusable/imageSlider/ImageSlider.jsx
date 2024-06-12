@@ -3,13 +3,19 @@ import ItemsCarousel from "../../itemsCarousel/ItemsCarousel";
 import "./ImageSlider.css";
 
 const ImageSlider = ({ data }) => {
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const createImages = () => {
     const images = [];
-    data.map((img) => {
-      images.push(<img key={img?.id} className="img-class" src={img.image} />);
+    data.forEach((img) => {
+      images.push(
+        <img
+          key={img?.id}
+          className="img-class"
+          src={img.image}
+          alt="carousel"
+        />
+      );
     });
     return images;
   };
@@ -17,8 +23,12 @@ const ImageSlider = ({ data }) => {
   const createTitleSection = () => {
     const titlesArray = [];
     const titles = data[currentSlide].title.split(",");
-    titles.map((title, index) =>
-      titlesArray.push(<div key={index} className="data-title-sections">{title}</div>)
+    titles.forEach((title, index) =>
+      titlesArray.push(
+        <div key={index} className="data-title-sections">
+          {title}
+        </div>
+      )
     );
     return titlesArray;
   };
