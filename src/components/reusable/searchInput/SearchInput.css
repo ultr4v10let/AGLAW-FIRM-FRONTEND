@@ -34,3 +34,11 @@
     margin: auto;
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  .search-input-container {
+    input {
+      min-width: 100px;
+    }
+  }
+}
