@@ -19,7 +19,6 @@ function ButtonComponent({
         fontSize: fontSize ? fontSize : "28px",
         cursor: "pointer",
         border: "none",
-        letterSpacing: "2px",
         background:
           style === "transparent"
             ? "rgba(0, 0, 0, 0.7)"

@@ -1,8 +1,11 @@
 import { useState } from "react";
 import ItemsCarousel from "../../itemsCarousel/ItemsCarousel";
-import "./ImageSlider.css";
+import justiceScaleImage from "../../../static/images/woman-scale.png";
+import ahmedbasha from "../../../static/images/AhmedBasha.png";
+import RadialGradientContainer from "../radialGradientContainer/RadialGradientContainer";
+import "./GalleryImageSlider.css";
 
-const ImageSlider = ({ data }) => {
+const GalleryImageSlider = ({ data }) => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -14,15 +17,6 @@ const ImageSlider = ({ data }) => {
     return images;
   };
 
-  const createTitleSection = () => {
-    const titlesArray = [];
-    const titles = data[currentSlide].title.split(",");
-    titles.map((title, index) =>
-      titlesArray.push(<div key={index} className="data-title-sections">{title}</div>)
-    );
-    return titlesArray;
-  };
-
   return (
     <div className="image-slider-container">
       <div
@@ -32,17 +26,16 @@ const ImageSlider = ({ data }) => {
           top: "-100px",
         }}
       ></div>
-      <div className="teammember-title">أعضاء الفريق</div>
+      <div className="legal-services-title"> Gallery </div>
       <ItemsCarousel
         items={createImages()}
         onchange={(slide) => setCurrentSlide(slide)}
       ></ItemsCarousel>
-      <div className="data-section">
-        <div className="data-title">{data[currentSlide].name}</div>
-        <div className="data-title-description">{createTitleSection()}</div>
+      <div className="gallery-data-section">
+        <div className="data-title-description">{data[currentSlide].description}</div>
       </div>
     </div>
   );
 };
 
-export default ImageSlider;
+export default GalleryImageSlider;

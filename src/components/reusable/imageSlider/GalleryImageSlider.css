@@ -3,8 +3,11 @@
   position: relative;
 }
 
-.data-section {
+.gallery-data-section {
+  margin-top: 2%;
   align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
 
   .data-title {
     font-size: 48px;
@@ -27,24 +30,6 @@
     text-align: center;
     color: var(--gold);
   }
-  /* 
-    .data-description{
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 600px;
-        text-align: center;
-        color: var(--gold);
-    } */
-}
-
-.teammember-title {
-  color: var(--gold);
-  font-family: Cairo;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 66.82px;
-  text-align: center;
-  padding-bottom: 120px;
 }
 
 .img-class {
