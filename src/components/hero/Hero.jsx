@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
 import "./Hero.css";
 import justiceImage from "../../static/images/justice-image.png";
+import justiceImageMobile from "../../static/images/justice-mobile.png";
 import ButtonComponent from "../reusable/buttonComponent/ButtonComponent";
 
 function Hero({
   backgroundImage = justiceImage,
+  mobileBackground = justiceImageMobile,
   buttonText,
   onButtonClick = () => {},
   textColor = "black",
   withNav = false,
 }) {
   const getWindowDimensions = () => {
-    const { innerHeight: height } = window;
+    const { innerHeight: height, innerWidth: width } = window;
     return {
       height,
+      width,
     };
   };
   const [windowDimensions, setWindowDimensions] = useState(
@@ -32,9 +35,13 @@ function Hero({
       className="hero-container"
       style={{
         height: withNav
-          ? `calc(${windowDimensions.height}px - 100px)`
+          ? `calc(${windowDimensions.height}px - ${
+              windowDimensions.width <= 1080 ? "70px" : "100px"
+            })`
           : `calc(${windowDimensions.height}px)`,
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${
+          windowDimensions.width <= 1080 ? mobileBackground : backgroundImage
+        })`,
       }}
     >
       <div className="hero-text-container" style={{ color: textColor }}>
@@ -44,7 +51,12 @@ function Hero({
         </div>
         {buttonText && (
           <div className="hero-button-container">
-            <ButtonComponent style="transparent" onClick={onButtonClick}>
+            <ButtonComponent
+              style="transparent"
+              height={windowDimensions.width <= 1080 && "35px"}
+              fontSize={windowDimensions.width <= 1080 && "16px"}
+              onClick={onButtonClick}
+            >
               Our Service
             </ButtonComponent>
           </div>

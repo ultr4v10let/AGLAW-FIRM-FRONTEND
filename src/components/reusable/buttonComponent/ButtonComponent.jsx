@@ -20,9 +20,7 @@ function ButtonComponent({
         cursor: "pointer",
         border: "none",
         background:
-          style === "transparent"
-            ? "rgba(0, 0, 0, 0.7)"
-            : "var(--gold-linear-gradient)",
+          style === "transparent" ? "#8B6850" : "var(--gold-linear-gradient)",
         color: style === "transparent" ? "white" : "black",
       }}
       onClick={onClick}
