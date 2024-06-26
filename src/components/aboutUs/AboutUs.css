@@ -76,3 +76,66 @@
   width: 75%;
   margin: auto;
 }
+
+@media only screen and (max-width: 1080px) {
+  .about-us-container {
+    padding: 90px 7% 30px 7%;
+  }
+
+  .about-us-title {
+    font-size: 30px;
+  }
+
+  .about-us-description {
+    font-size: 16px;
+    line-height: 30.97px;
+    text-align: justify;
+    text-justify: inter-word;
+    direction: rtl;
+  }
+
+  .about-us-cards-container {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .about-us-card-text-1,
+  .about-us-card-text-2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .consultancy-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+
+  .consultancy-container-right {
+    width: 100%;
+
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  .consultancy-container-left {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .consultancy-text {
+    font-size: 16px;
+    line-height: 30.46px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    direction: rtl;
+  }
+
+  .consultancy-button {
+    width: 60%;
+    margin: auto;
+  }
+}
