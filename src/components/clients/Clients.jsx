@@ -2,8 +2,10 @@ import React from "react";
 import "./Clients.css";
 import ItemsCarousel from "../itemsCarousel/ItemsCarousel";
 import LegalServicesCard from "../reusable/legalServicesCard/LegalServicesCard";
+import useWindowSize from "../../hooks/useWindowSize";
 export default function Clients(data) {
-  const carouselConfig = data.data
+  const { windowWidth } = useWindowSize();
+  const carouselConfig = data.data;
 
   const items = carouselConfig.map((configItem) => (
     <LegalServicesCard
@@ -23,7 +25,10 @@ export default function Clients(data) {
         }}
       ></div>
       <div className="clients-title">عملائنا</div>
-      <ItemsCarousel items={items} numberOfDeskTopItems={3} />
+      <ItemsCarousel
+        items={items}
+        numberOfDeskTopItems={windowWidth <= 1080 ? 1 : 3}
+      />
     </div>
   );
 }

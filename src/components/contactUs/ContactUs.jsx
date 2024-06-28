@@ -5,8 +5,10 @@ import Hero from "../hero/Hero";
 import backgroundImage from "../../static/images/contact-us-BG.png";
 import ButtonComponent from "../reusable/buttonComponent/ButtonComponent";
 import emailjs from "@emailjs/browser";
+import useWindowSize from "../../hooks/useWindowSize";
 
 function ContactUs() {
+  const { windowWidth } = useWindowSize();
   const form = useRef();
   const formSubmitHandler = (e) => {
     e.preventDefault();
@@ -36,11 +38,13 @@ function ContactUs() {
           top: "-100px",
         }}
       ></div>
-      <Hero
-        backgroundImage={backgroundImage}
-        textColor="white"
-        withNav={true}
-      />
+      {windowWidth > 1080 && (
+        <Hero
+          backgroundImage={backgroundImage}
+          textColor="white"
+          withNav={true}
+        />
+      )}
       <form
         ref={form}
         onSubmit={formSubmitHandler}
