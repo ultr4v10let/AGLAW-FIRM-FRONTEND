@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import "./Hero.css";
 import justiceImage from "../../static/images/justice-image.png";
 import justiceImageMobile from "../../static/images/justice-mobile.png";
 import ButtonComponent from "../reusable/buttonComponent/ButtonComponent";
+import useWindowSize from "../../hooks/useWindowSize";
 
 function Hero({
   backgroundImage = justiceImage,
@@ -12,35 +13,18 @@ function Hero({
   textColor = "black",
   withNav = false,
 }) {
-  const getWindowDimensions = () => {
-    const { innerHeight: height, innerWidth: width } = window;
-    return {
-      height,
-      width,
-    };
-  };
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { windowWidth, windowHeight } = useWindowSize();
   return (
     <div
       className="hero-container"
       style={{
         height: withNav
-          ? `calc(${windowDimensions.height}px - ${
-              windowDimensions.width <= 1080 ? "70px" : "100px"
+          ? `calc(${windowHeight}px - ${
+              windowWidth <= 1080 ? "70px" : "100px"
             })`
-          : `calc(${windowDimensions.height}px)`,
+          : `calc(${windowHeight}px)`,
         backgroundImage: `url(${
-          windowDimensions.width <= 1080 ? mobileBackground : backgroundImage
+          windowWidth <= 1080 ? mobileBackground : backgroundImage
         })`,
       }}
     >
@@ -53,8 +37,8 @@ function Hero({
           <div className="hero-button-container">
             <ButtonComponent
               style="transparent"
-              height={windowDimensions.width <= 1080 && "35px"}
-              fontSize={windowDimensions.width <= 1080 && "16px"}
+              height={windowWidth <= 1080 && "35px"}
+              fontSize={windowWidth <= 1080 && "16px"}
               onClick={onButtonClick}
             >
               Our Service

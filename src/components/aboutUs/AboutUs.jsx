@@ -1,28 +1,12 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import "./AboutUs.css";
 import Card from "../reusable/Card/Card";
 import justiceScaleImage from "../../static/images/woman-scale.png";
 import ButtonComponent from "../reusable/buttonComponent/ButtonComponent";
+import useWindowSize from "../../hooks/useWindowSize";
 
 function AboutUs() {
-  const getWindowDimensions = () => {
-    const { innerHeight: height, innerWidth: width } = window;
-    return {
-      height,
-      width,
-    };
-  };
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { windowWidth } = useWindowSize();
   return (
     <div className="about-us-container">
       <div
@@ -71,8 +55,8 @@ function AboutUs() {
           </div>
           <div className="consultancy-button">
             <ButtonComponent
-              height={windowDimensions.width <= 1080 && "35px"}
-              fontSize={windowDimensions.width <= 1080 && "16px"}
+              height={windowWidth <= 1080 && "35px"}
+              fontSize={windowWidth <= 1080 && "16px"}
             >
               <strong>اطلب استشارة فورية</strong>
             </ButtonComponent>
