@@ -2,7 +2,9 @@ import React from "react";
 import "./LegalServices.css";
 import ItemsCarousel from "../itemsCarousel/ItemsCarousel";
 import LegalServicesCard from "../reusable/legalServicesCard/LegalServicesCard";
+import useWindowSize from "../../hooks/useWindowSize";
 export default function LegalServices(data) {
+  const { windowWidth } = useWindowSize();
   const carouselConfig = data.data;
 
   const items = carouselConfig.map((configItem) => (
@@ -23,7 +25,10 @@ export default function LegalServices(data) {
         }}
       ></div>
       <div className="legal-services-title">الخدمات القانونية</div>
-      <ItemsCarousel items={items} numberOfDeskTopItems={3} />
+      <ItemsCarousel
+        items={items}
+        numberOfDeskTopItems={windowWidth <= 1080 ? 1 : 3}
+      />
     </div>
   );
 }

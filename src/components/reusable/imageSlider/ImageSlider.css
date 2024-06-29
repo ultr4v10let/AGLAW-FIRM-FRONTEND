@@ -52,3 +52,40 @@
   width: 600px;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 1080px) {
+  .image-slider-container {
+    padding-bottom: 100px !important;
+  }
+
+  .teammember-title {
+    font-size: 30px;
+    line-height: 0px;
+    padding-bottom: 70px;
+  }
+
+  .img-class {
+    height: 500px !important;
+    width: 90vw !important;
+    object-fit: cover;
+  }
+
+  .data-section {
+    .data-title {
+      font-size: 28px;
+      line-height: 0px;
+      padding-bottom: 25px;
+      padding-top: 35px;
+    }
+
+    .data-title-description {
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      min-height: auto !important;
+    }
+
+    .data-title-sections {
+      font-size: 14px !important;
+    }
+  }
+}

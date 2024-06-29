@@ -55,8 +55,8 @@ function Home() {
         {teamMembers.length > 0 && <ImageSlider data={teamMembers} />}
         {gallery.length > 0 && <GalleryImageSlider data={gallery} />}
         {clients.length > 0 && <Clients data={clients} />}
+        <ContactUs />
       </RadialGradientContainer>
-      <ContactUs />
     </div>
   );
 }

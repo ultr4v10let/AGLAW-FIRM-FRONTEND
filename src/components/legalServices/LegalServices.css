@@ -37,3 +37,35 @@ p {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+@media only screen and (max-width: 1080px) {
+  .corousel-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .legal-services-title {
+    font-size: 30px;
+    line-height: 0px;
+    padding-bottom: 70px;
+  }
+
+  .image-1 {
+    height: 150px !important;
+    padding-bottom: 25px;
+  }
+
+  .Text-1 {
+    color: #e2cba1;
+    font-size: 20px !important;
+    padding-top: 0px !important;
+    height: auto !important;
+    padding-bottom: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  p {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+}

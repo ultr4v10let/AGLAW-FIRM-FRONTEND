@@ -48,7 +48,7 @@ function ItemsCarousel({ items, onchange, numberOfDeskTopItems = 1 }) {
     <Carousel
       swipeable={true}
       draggable={true}
-      centerMode={true}
+      centerMode={numberOfDeskTopItems === 1 ? false : true}
       slidesToSlide={1}
       responsive={responsive}
       focusOnSelect={true}

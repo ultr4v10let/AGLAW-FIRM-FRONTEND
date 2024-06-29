@@ -37,3 +37,22 @@
   width: 600px;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 1080px) {
+  .image-slider-container {
+    padding-bottom: 100px !important;
+  }
+
+  .data-title-description {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    text-align: justify !important;
+    min-height: auto !important;
+  }
+
+  .gallery-data-section {
+    margin-top: 35px !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
