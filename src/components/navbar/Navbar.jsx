@@ -40,7 +40,7 @@ function Navbar() {
     },
     {
       title: "تواصل معنا",
-      link: "#contactUs",
+      link: "#m-contactUs",
       withDivider: false,
     },
   ];
