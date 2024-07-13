@@ -29,6 +29,8 @@ export default function Clients(data) {
         items={items}
         numberOfDeskTopItems={windowWidth <= 1080 ? 1 : 3}
       />
+      {/* This is am empty div just for mobile redirection */}
+      <div id="m-contactUs"></div>
     </div>
   );
 }

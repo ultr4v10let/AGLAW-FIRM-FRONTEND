@@ -57,7 +57,6 @@ function ItemsCarousel({ items, onchange, numberOfDeskTopItems = 1 }) {
       keyBoardControl={true}
       shouldResetAutoplay={false}
       containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
       itemClass="carousel-item-padding-5-px"
       afterChange={(previousSlide, { currentSlide, onMove }) => {
         detectCurrentslide(previousSlide, currentSlide);
