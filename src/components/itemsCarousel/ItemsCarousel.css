@@ -3,12 +3,17 @@
   height: 100%;
 }
 
-.items-container{
+.items-container {
   text-align: center;
 }
 
 .carousel-container {
   background: transparent;
+
+  .react-multiple-carousel__arrow {
+    border: solid;
+    border-color: #e2cba1;
+  }
 
   .react-multiple-carousel__arrow::before {
     color: #e2cba1;

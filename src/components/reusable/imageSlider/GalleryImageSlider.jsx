@@ -23,13 +23,13 @@ const GalleryImageSlider = ({ data }) => {
   return (
     <div className="image-slider-container">
       <div
-        id="whoWeAre"
+        id="gallery"
         style={{
           position: "absolute",
           top: "-100px",
         }}
       ></div>
-      <div className="legal-services-title"> Gallery </div>
+      <div className="legal-services-title"> الميديا </div>
       <ItemsCarousel
         items={createImages()}
         onchange={(slide) => setCurrentSlide(slide)}

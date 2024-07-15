@@ -35,14 +35,14 @@ function Navbar() {
       link: "#legalServices",
       withDivider: true,
     },
-    {
-      title: "الاخبار",
-      link: "#",
-      withDivider: true,
-    },
+    // {
+    //   title: "الاخبار",
+    //   link: "#",
+    //   withDivider: true,
+    // },
     {
       title: "الميديا",
-      link: "#",
+      link: "#gallery",
       withDivider: true,
     },
     {
@@ -81,7 +81,7 @@ function Navbar() {
             console.log("SEARCH");
           }}
         /> */}
-                <div className="footer-social-media">
+        <div className="footer-social-media">
           <a href="https://facebook.com" className="button facebook">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
@@ -96,7 +96,8 @@ function Navbar() {
           <a href="#">الرئيسية</a>
           <a href="#whoWeAre">من نحن </a>
           <a href="#legalServices">الخدمات القانونية</a>
-          <a href="#">الميديا</a>
+          {/* <a href="#">الاخبار</a> */}
+          <a href="#gallery">الميديا</a>
           <a href="#contactUs">تواصل معنا</a>
         </div>
         <div className="navbar-logo-container">
