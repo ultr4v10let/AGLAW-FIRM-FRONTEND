@@ -29,7 +29,7 @@ function AboutUs() {
         <Card>
           <div className="about-us-card-text-container">
             <div className="about-us-card-text-1">
-              القانون هو وسيلتنا لضمان العدالة والمساواة
+              في عالم مليء بالتحديات القانونية، نحن هنا لنرشدك
             </div>
             {/* <div className="about-us-card-text-2">قانونية</div> */}
           </div>
@@ -37,7 +37,7 @@ function AboutUs() {
         <Card>
           <div className="about-us-card-text-container">
             <div className="about-us-card-text-1">
-              في عالم مليء بالتحديات القانونية، نحن هنا لنرشدك
+              نحن هنا لنجعل القانون يعمل لصالحك
             </div>
             {/* <div className="about-us-card-text-2">ذو خبرة اكثر من 30 عاما</div> */}
           </div>
@@ -45,7 +45,7 @@ function AboutUs() {
         <Card>
           <div className="about-us-card-text-container">
             <div className="about-us-card-text-1">
-              نحن هنا لنجعل القانون يعمل لصالحك
+              القانون هو وسيلتنا لضمان العدالة والمساواة
             </div>
             {/* <div className="about-us-card-text-2">المستشارين</div> */}
           </div>
