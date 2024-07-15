@@ -5,6 +5,13 @@ import SearchInput from "../reusable/searchInput/SearchInput";
 import logoSmall from "../../static/images/ag-law-logo-small.png";
 import closeIcon from "../../static/icons/close-icon.svg";
 import hamburgerIcon from "../../static/icons/hamburger-icon.svg";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
   const [inputValue, setInputValue] = useState("");
@@ -67,18 +74,28 @@ function Navbar() {
   return (
     <>
       <nav className="navbar-container">
-        <SearchInput
+        {/* <SearchInput
           inputValue={inputValue}
           setInputValue={setInputValue}
           onSearch={() => {
             console.log("SEARCH");
           }}
-        />
+        /> */}
+                <div className="footer-social-media">
+          <a href="https://facebook.com" className="button facebook">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="https://instagram.com" className="button instagram">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://linkedin.com" className="button linkedin">
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+        </div>
         <div className="navbar-buttons">
           <a href="#">الرئيسية</a>
           <a href="#whoWeAre">من نحن </a>
           <a href="#legalServices">الخدمات القانونية</a>
-          <a href="#">الاخبار</a>
           <a href="#">الميديا</a>
           <a href="#contactUs">تواصل معنا</a>
         </div>
