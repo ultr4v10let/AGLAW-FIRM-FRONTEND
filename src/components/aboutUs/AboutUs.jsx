@@ -23,25 +23,31 @@ function AboutUs() {
         العملاء. يستفيد محامونا المتميزون من معرفتهم القانونية الواسعة لتقديم
         التوجيه الاستراتيجي والحلول المخصصة حتى للتحديات الأكثر تعقيدًا. نحن
         ملتزمون ببناء علاقات قوية مع العملاء، وتعزيز الشراكات المبنية على الثقة
-        والشفافية والتفاني المشترك لتحقيق النجاح.
+        والشفافية والتفاني المشترك لتحقيق النجاح
       </div>
       <div className="about-us-cards-container">
         <Card>
           <div className="about-us-card-text-container">
-            <div className="about-us-card-text-1">استشارات</div>
-            <div className="about-us-card-text-2">قانونية</div>
+            <div className="about-us-card-text-1">
+              القانون هو وسيلتنا لضمان العدالة والمساواة
+            </div>
+            {/* <div className="about-us-card-text-2">قانونية</div> */}
           </div>
         </Card>
         <Card>
           <div className="about-us-card-text-container">
-            <div className="about-us-card-text-1">مكتب محاماة</div>
-            <div className="about-us-card-text-2">ذو خبرة اكثر من 30 عاما</div>
+            <div className="about-us-card-text-1">
+              في عالم مليء بالتحديات القانونية، نحن هنا لنرشدك
+            </div>
+            {/* <div className="about-us-card-text-2">ذو خبرة اكثر من 30 عاما</div> */}
           </div>
         </Card>
         <Card>
           <div className="about-us-card-text-container">
-            <div className="about-us-card-text-1">نبذة عن</div>
-            <div className="about-us-card-text-2">المستشارين</div>
+            <div className="about-us-card-text-1">
+              نحن هنا لنجعل القانون يعمل لصالحك
+            </div>
+            {/* <div className="about-us-card-text-2">المستشارين</div> */}
           </div>
         </Card>
       </div>
@@ -73,7 +79,7 @@ function AboutUs() {
               height={windowWidth <= 1080 && "35px"}
               fontSize={windowWidth <= 1080 && "16px"}
             >
-              <strong>اطلب استشارة فورية</strong>
+              <strong>أطلب استشارة فورية</strong>
             </ButtonComponent>
           </div>
         </div>

@@ -31,9 +31,9 @@ const Footer = () => {
           <a href="https://instagram.com" className="button instagram">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://twitter.com" className="button twitter">
+          {/* <a href="https://twitter.com" className="button twitter">
             <FontAwesomeIcon icon={faTwitter} />
-          </a>
+          </a> */}
           <a href="https://linkedin.com" className="button linkedin">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
@@ -43,7 +43,7 @@ const Footer = () => {
         {/* <div className="lower-footer-content">
           Surround yourself with beauty
         </div> */}
-        <div className="lower-footer-textinput-button-container">
+        {/* <div className="lower-footer-textinput-button-container">
           <TextField
             value={email}
             onChange={handleEmailChange}
@@ -52,13 +52,13 @@ const Footer = () => {
           <div className="button-container">
             <button className="subscribe-button">Subscribe</button>
           </div>
-        </div>
-        <div className="lower-footer-content2">
+        </div> */}
+        {/* <div className="lower-footer-content2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
           facilisis orci eu ante cursus, quis molestie justo pulvinar. quis
           molestie justo pulvinar. Aliquam commodo felis vel euismod convallis.
           Donec consectetur placerat eros.
-        </div>
+        </div> */}
       </div>
     </div>
   );

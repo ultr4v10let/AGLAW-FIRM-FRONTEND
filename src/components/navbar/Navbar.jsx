@@ -35,7 +35,7 @@ function Navbar() {
     },
     {
       title: "الميديا",
-      link: "#",
+      link: "#gallery",
       withDivider: true,
     },
     {
@@ -67,19 +67,19 @@ function Navbar() {
   return (
     <>
       <nav className="navbar-container">
-        <SearchInput
+        {/* <SearchInput
           inputValue={inputValue}
           setInputValue={setInputValue}
           onSearch={() => {
             console.log("SEARCH");
           }}
-        />
+        /> */}
         <div className="navbar-buttons">
           <a href="#">الرئيسية</a>
           <a href="#whoWeAre">من نحن </a>
           <a href="#legalServices">الخدمات القانونية</a>
-          <a href="#">الاخبار</a>
-          <a href="#">الميديا</a>
+          {/* <a href="#">الاخبار</a> */}
+          <a href="#gallery">الميديا</a>
           <a href="#contactUs">تواصل معنا</a>
         </div>
         <div className="navbar-logo-container">
