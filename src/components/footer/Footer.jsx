@@ -40,9 +40,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="lower-footer">
-        <div className="lower-footer-content">
+        {/* <div className="lower-footer-content">
           Surround yourself with beauty
-        </div>
+        </div> */}
         <div className="lower-footer-textinput-button-container">
           <TextField
             value={email}
