@@ -81,7 +81,7 @@ function Navbar() {
             console.log("SEARCH");
           }}
         /> */}
-        <div className="footer-social-media">
+        <div className="nav-social-media">
           <a href="https://facebook.com" className="button facebook">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
@@ -137,7 +137,7 @@ function Navbar() {
             style={{ marginLeft: "auto" }}
           />
         </div>
-        <div className="navbar-mobile-search-container">
+        {/* <div className="navbar-mobile-search-container">
           <SearchInput
             inputValue={inputValue}
             setInputValue={setInputValue}
@@ -145,9 +145,20 @@ function Navbar() {
               console.log("SEARCH");
             }}
           />
-        </div>
+        </div> */}
         <div className="navbar-buttons-mobile">
           {renderMobileMenuItems(mobileNavbarItems)}
+        </div>
+        <div className="nav-social-media-mobile">
+          <a href="https://facebook.com" className="button facebook">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="https://instagram.com" className="button instagram">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://linkedin.com" className="button linkedin">
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
         </div>
       </nav>
     </>
