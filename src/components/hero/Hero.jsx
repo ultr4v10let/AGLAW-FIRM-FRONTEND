@@ -41,7 +41,7 @@ function Hero({
               fontSize={windowWidth <= 1080 && "16px"}
               onClick={onButtonClick}
             >
-              Our services
+              Our Services
             </ButtonComponent>
           </div>
         )}

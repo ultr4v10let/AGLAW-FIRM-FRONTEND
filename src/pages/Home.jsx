@@ -45,10 +45,15 @@ function Home() {
     });
   }, []);
 
+  const ourServicesButtonOnClick = (e) => {
+    e.preventDefault();
+    window.location.href='#legalServices';
+    }
+
   return (
     <div>
       <Navbar />
-      <Hero buttonText="Our Services" withNav={true} />
+      <Hero buttonText="Our Services" withNav={true} onButtonClick={ourServicesButtonOnClick} />
       <RadialGradientContainer side="left">
         <AboutUs />
         {legalServices.length > 0 && <LegalServices data={legalServices} />}
