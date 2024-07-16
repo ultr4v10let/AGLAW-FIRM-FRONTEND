@@ -49,7 +49,7 @@
 
 .img-class {
   height: 700px;
-  width: 600px;
+  /* width: 600px; */
   object-fit: cover;
 }
 
@@ -65,8 +65,8 @@
   }
 
   .img-class {
-    height: 500px !important;
-    width: 90vw !important;
+    height: 200px !important;
+    width: 90% !important;
     object-fit: cover;
   }
 

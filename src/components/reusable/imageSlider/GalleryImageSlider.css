@@ -34,7 +34,7 @@
 
 .img-class {
   height: 700px;
-  width: 600px;
+  /* width: 600px; */
   object-fit: cover;
 }
 
